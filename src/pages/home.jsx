@@ -53,7 +53,7 @@ function Home() {
 
     {/* Headline & Subtext */}
     <h1 style={{ fontSize: '4rem', marginBottom: '1rem' }}>
-      AI Driven Solutions for Small Businesses
+      AI Driven Solutions
     </h1>
     <p style={{ maxWidth: '800px', fontSize: '1.2rem', opacity: 0.9 }}>
       Arcasya.ai is your modern toolbox — a localized, intelligent platform built to unify CRMs,

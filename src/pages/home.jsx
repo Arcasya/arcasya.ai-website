@@ -53,7 +53,7 @@ function Home() {
 
     {/* Headline & Subtext */}
     <h1 style={{ fontSize: '4rem', marginBottom: '1rem' }}>
-      AI Driven Solutions by True Mark USA
+      AI Driven Solutions for Small Businesses
     </h1>
     <p style={{ maxWidth: '800px', fontSize: '1.2rem', opacity: 0.9 }}>
       Arcasya.ai is your modern toolbox — a localized, intelligent platform built to unify CRMs,
@@ -178,7 +178,7 @@ function Home() {
 </section>
 
 <footer style={{ backgroundColor: '#0d0d0d', color: '#aaa', textAlign: 'center', padding: '1.5rem 1rem', fontSize: '0.9rem' }}>
-  © {new Date().getFullYear()} Arcasya.ai — A True Mark USA Company. All rights reserved.
+  © {new Date().getFullYear()} Arcasya.ai — A True Mark USA Product. All rights reserved.
 </footer>
 
     </div>

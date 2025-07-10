@@ -1,0 +1,2 @@
+### Test Arcasya Backend - No Auth
+GET http://localhost:5000/api/agents

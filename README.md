@@ -1,69 +1,112 @@
-# React + TypeScript + Vite
+# Arcasya.ai
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Arcasya.ai is an AI-powered backend and automation platform developed by **True Mark USA**. It empowers American service businesses with integrated CRM systems, custom AI agents, and seamless cloud + local workflows.
 
-Currently, two official plugins are available:
+This is the monorepo containing both the **frontend (React + Vite)** and the **backend (Node.js + Express)**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📚 Table of Contents
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [Monorepo Structure](#-monorepo-structure)
+- [Frontend](#-frontend)
+- [Backend](#-backend)
+- [Firebase Configuration](#-firebase-configuration)
+- [Deployment](#-deployment)
+- [Platform Roadmap](#-platform-roadmap)
+- [Why Arcasya.ai](#-why-arcasyaai)
+- [Created by](#-created-by)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🧱 Monorepo Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+<pre> <code> ``` arcasya.ai-website/ ├── frontend/ # Vite + React + Firebase login ├── backend/ # Node.js + Express + Firebase token auth └── README.md ``` </code> </pre>
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Frontend
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Features
+
+- Built with **React + TypeScript + Vite**
+- **Firebase Authentication** (Email/Password)
+- Token-based authentication with backend
+- Modular structure (Home, About, Login, Dashboard, etc.)
+
+### Local Development
+
+```bash
+cd frontend
+npm install
+npm run dev
+# Frontend runs at: http://localhost:5173
+
+---
+
+## 🔧 Backend
+
+### Features
+
+- Built with **Node.js + TypeScript + Express**
+- RESTful API with protected routes
+- **Firebase Admin SDK** for token verification
+- Structured for PostgreSQL and AI agent expansion
+
+### Local Development
+
+```bash
+cd backend
+npm install
+npm run dev
+# Backend runs
+
+---
+
+## 🔐 Firebase Configuration
+
+- **Firebase Project**: `arcasyaai-website`
+- **Authentication**: Email/Password
+- **Admin SDK**: Used on backend for token verification (no service account key required)
+---
+
+## 📦 Deployment
+
+### Frontend (Firebase Hosting)
+
+```bash
+cd frontend
+npm run build
+firebase deploy
+
+---
+
+## 🛠 Platform Roadmap
+
+- ✅ Frontend + backend monorepo setup
+- ✅ Firebase login + auth token verification
+- 🔄 AI Agent framework (LangChain, Ollama, n8n)
+- 🔄 Cross-CRM integrations (Jobber, HubSpot, etc.)
+- 🔄 Multi-tenant ecosystem support
+- 🔄 Local J.A.R.V.I.S.-style desktop agent (planned)
+
+---
+
+## 💡 Why Arcasya.ai?
+
+- **Custom AI Agents**: Master + Specialized agents with memory
+- **Cross-CRM Integration**: HubSpot, Jobber, ServiceTitan, and more
+- **Cloud + Local Automation**: Desktop agent support in development
+- **Multi-Tenant Ecosystem**: Designed for collaborative networks
+- **Natural Language Ops**: Prompt-to-action execution
+- **America-First Tech**: Focused on local service resilience
+
+---
+
+## 🗽 Created by
+
+**True Mark USA** — An America-first tech company building tools to empower local business ecosystems with ethical, AI-driven solutions.
+
+🔗 [truemarkusa.com](https://truemarkusa.com)
+
+> "Launching service businesses into the future with AI."

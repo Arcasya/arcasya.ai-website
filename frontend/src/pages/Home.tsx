@@ -72,6 +72,7 @@ const Home: React.FC = () => {
           }}
         >
           <img src="/arcasyaai_logo.png" alt="Arcasya.ai Logo" className="hero-logo" />
+
           <h1 style={{ fontSize: '4rem', marginBottom: '1rem' }}>
             AI Driven Solutions by True Mark USA
           </h1>
@@ -182,3 +183,4 @@ const Home: React.FC = () => {
 };
 
 export default Home;
+

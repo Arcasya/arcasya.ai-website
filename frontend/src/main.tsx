@@ -1,20 +1,12 @@
-// src/main.tsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import './index.css';     // Global styles
-import App from './app'; // Core layout and routes
+import App from './App';
+import './index.css';
 
-
-const root = document.getElementById('root');
-
-if (!root) {
-  throw new Error('Root element not found');
-}
-
-ReactDOM.createRoot(root).render(
+ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter> {/* ✅ This is the only place BrowserRouter should appear */}
       <App />
     </BrowserRouter>
   </React.StrictMode>

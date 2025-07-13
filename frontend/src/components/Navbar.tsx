@@ -67,7 +67,9 @@ const Navbar: React.FC = () => {
             >
               <Link to="/" style={linkStyle}>Home</Link>
               <Link to="/about" style={linkStyle}>About</Link>
-              <Link to="/shop" style={linkStyle}>Shop</Link> {/* ✅ ADDED */}
+              <Link to="/shop" style={linkStyle}>Shop</Link>
+              <Link to="/signup" style={linkStyle}>Sign Up</Link>
+              <Link to="/login" style={linkStyle}>Login</Link> {/* ✅ MOBILE */}
             </div>
           )}
         </>
@@ -76,7 +78,9 @@ const Navbar: React.FC = () => {
         <div style={{ display: 'flex', gap: '1rem' }}>
           <Link to="/" style={linkStyle}>Home</Link>
           <Link to="/about" style={linkStyle}>About</Link>
-          <Link to="/shop" style={linkStyle}>Shop</Link> {/* ✅ ADDED */}
+          <Link to="/shop" style={linkStyle}>Shop</Link>
+          <Link to="/signup" style={linkStyle}>Sign Up</Link>
+          <Link to="/login" style={linkStyle}>Login</Link> {/* ✅ DESKTOP */}
         </div>
       )}
     </nav>

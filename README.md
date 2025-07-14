@@ -1,89 +1,23 @@
-Arcasya.ai is an AI-powered backend and automation platform developed by **True Mark USA**. It empowers American service businesses with integrated CRM systems, custom AI agents, and seamless cloud + local workflows.
+# 🚀 Arcasya.ai
 
-This is the monorepo containing both the **frontend (React + Vite)** and the **backend (Node.js + Express)**.
+**AI-Powered Automation Platform for Service Businesses**  
+Built by [True Mark USA](https://truemarkusa.com)
+
+---
+
+## 🧠 Overview
+
+**Arcasya.ai** is a full-stack AI automation and backend orchestration platform designed for American service businesses. It unifies CRMs, streamlines operations, and activates intelligent AI agents — all from a centralized dashboard at [dashboard.arcasya.ai](https://dashboard.arcasya.ai).
+
+Inspired by the concept of **localized AI ecosystems**, Arcasya.ai empowers companies to integrate systems, automate backend logic, and scale with clarity.
 
 ---
 
 ## 🧱 Monorepo Structure
 
+```plaintext
 arcasya.ai-website/
-├── frontend/ # Vite + React + Firebase login
-├── backend/ # Node.js + Express + Firebase token auth
+├── frontend/   # React + Firebase Auth dashboard (dashboard.arcasya.ai)
+├── backend/    # Node.js + Express API (token-verified)
+├── n8n/        # Docker-deployed AI agent engine (automation backend)
 └── README.md
-
-yaml
-Copy
-Edit
-
----
-
-## 🚀 Frontend
-
-### Features:
-- Built with **React + TypeScript + Vite**
-- **Firebase Authentication** (Email/Password)
-- Token-based auth with backend
-- Modular pages (Home, About, Login, etc.)
-
-### Local Dev:
-
-bash
-cd frontend
-npm install
-npm run dev
-Frontend runs at: http://localhost:5173
-
-🔧 Backend
-Features:
-Built with Node.js + TypeScript
-
-Express API with protected routes
-
-Firebase Admin SDK for token verification
-
-Ready for PostgreSQL + AI agent expansion
-
-Local Dev:
-bash
-Copy
-Edit
-cd backend
-npm install
-npm run dev
-Backend runs at: http://localhost:5000
-
-🔐 Firebase
-Firebase Project: arcasyaai-website
-
-Auth: Email/Password
-
-Admin SDK used on backend (without service account key)
-
-📦 Deployment
-Frontend (Firebase Hosting):
-bash
-Copy
-Edit
-cd frontend
-npm run build
-firebase deploy
-Backend:
-Planned deployment to Google Cloud Run or Render.
-
-🧭 Roadmap
- Frontend + backend monorepo
-
- Firebase login + auth token verification
-
- AI Agent framework (LangChain / Ollama / n8n)
-
- CRM integrations (Jobber, HubSpot)
-
- Multi-tenant ecosystem support
-
- Local J.A.R.V.I.S.-style agent
-
-🗽 Created by
-True Mark USA
-An America-First company building tech for local resilience.
-https://truemarkusa.com

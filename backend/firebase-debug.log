@@ -1,0 +1,65 @@
+[debug] [2025-07-13T01:39:53.101Z] ----------------------------------------------------------------------
+[debug] [2025-07-13T01:39:53.104Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jacob\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js --debug
+[debug] [2025-07-13T01:39:53.104Z] CLI Version:   14.10.1
+[debug] [2025-07-13T01:39:53.104Z] Platform:      win32
+[debug] [2025-07-13T01:39:53.104Z] Node Version:  v22.17.0
+[debug] [2025-07-13T01:39:53.105Z] Time:          Sat Jul 12 2025 21:39:53 GMT-0400 (Eastern Daylight Time)
+[debug] [2025-07-13T01:39:53.105Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-13T01:39:53.108Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-07-13T01:39:53.147Z] TypeError: Cannot read properties of undefined (reading '0')
+    at Command.<anonymous> (C:\Users\jacob\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js:57:21)
+    at Command.listener [as _actionHandler] (C:\Users\jacob\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\commander\index.js:413:31)
+    at Command._parseCommand (C:\Users\jacob\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\commander\index.js:914:14)
+    at Command.parse (C:\Users\jacob\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\commander\index.js:717:10)
+    at cli (C:\Users\jacob\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\cli.js:95:30)
+    at Object.<anonymous> (C:\Users\jacob\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js:18:5)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-07-13T01:39:53.220Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-07-13T01:39:53.220Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2025-07-13T01:40:07.774Z] ----------------------------------------------------------------------
+[debug] [2025-07-13T01:40:07.777Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jacob\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:list --debug
+[debug] [2025-07-13T01:40:07.777Z] CLI Version:   14.10.1
+[debug] [2025-07-13T01:40:07.777Z] Platform:      win32
+[debug] [2025-07-13T01:40:07.777Z] Node Version:  v22.17.0
+[debug] [2025-07-13T01:40:07.778Z] Time:          Sat Jul 12 2025 21:40:07 GMT-0400 (Eastern Daylight Time)
+[debug] [2025-07-13T01:40:07.778Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-13T01:40:07.964Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-13T01:40:07.965Z] > authorizing via signed-in user (jacob@truemarkusa.com)
+[debug] [2025-07-13T01:40:07.969Z] Checked if tokens are valid: false, expires at: 1752297888937
+[debug] [2025-07-13T01:40:07.969Z] Checked if tokens are valid: false, expires at: 1752297888937
+[debug] [2025-07-13T01:40:07.970Z] > refreshing access token with scopes: []
+[debug] [2025-07-13T01:40:07.971Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-07-13T01:40:07.971Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-13T01:40:08.134Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-07-13T01:40:08.134Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-07-13T01:40:08.135Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-07-13T01:40:08.137Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\jacob\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:167:12)
+    at refreshTokens (C:\Users\jacob\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:556:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getAccessToken (C:\Users\jacob\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:42:18)
+    at async Client.addAuthHeader (C:\Users\jacob\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:169:21)
+    at async Client.request (C:\Users\jacob\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:120:34)
+    at async getProjectPage (C:\Users\jacob\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:267:17)
+    at async getFirebaseProjectPage (C:\Users\jacob\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:284:23)
+    at async listFirebaseProjects (C:\Users\jacob\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:315:29)
+    at async Command.actionFn (C:\Users\jacob\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\projects-list.js:51:20)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
